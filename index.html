@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início - Alexsandro Veiga</title>
+  <style>
+    :root {
+      font-size: 16px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    input,
+    textarea {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+    }
+    header {
+      background: #e0e0e0;
+      height: 100vh;
+      background: url('https://avatars.githubusercontent.com/u/53938111?v=4') top right no-repeat;
+      background-size: contain;
+      position: relative;
+    }
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      color: #222;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      justify-content: space-between;
+      height: 4rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #222
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #b44d5c;
+    }
+    nav h1 {
+      color: #b44d5c;
+    }
+    .presentation {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc((100% - 1100px) / 2);
+      width: 1200px;
+    }
+    .presentation p {
+      margin: 1rem 0;
+    }
+    .presentation span {
+      background: #b44d5c;
+      height: 3rem;
+      color: #fff;
+      border-radius: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="active">Início</a>
+        </li>
+        <li>
+          Serviços
+        </li>
+        <li>
+          <a href="aboutme.html">Sobre mim</a>
+        </li>
+        <li>
+          <h1>Dev.</h1>
+        </li>
+        <li>
+          Portfólio
+        </li>
+        <li>
+          Clientes
+        </li>
+        <li>
+          <a href="contact.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="presentation">
+      <h1>Olá, sou o Alexsandro Veiga</h1>
+      <p>Um desenvolvedor web com sede na cidade de Duque de Caxias</p>
+      <span>Portfólio</span>
+    </div>
+  </header>
+</body>
+</html>

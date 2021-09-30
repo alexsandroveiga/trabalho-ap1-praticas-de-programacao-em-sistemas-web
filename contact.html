@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Alexsandro Veiga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      font-size: 16px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    input,
+    textarea {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+    }
+    header {
+      position: relative;
+      margin: 0 auto 1rem auto;
+      max-width: calc(100% - 4rem);
+    }
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      color: #222;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      justify-content: space-between;
+      height: 4rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #222
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #b44d5c;
+      font-weight: 500;
+    }
+    nav h1 {
+      color: #b44d5c;
+    }
+    main {
+      max-width: 1100px;
+      height: calc(100vh - 5rem);
+      margin: 0 auto;
+      width: calc(100% - 4rem);
+    }
+    main h1 {
+      text-align: center;
+    }
+    main form {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    main form label {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    main form label:nth-child(1),
+    main form label:nth-child(2) {
+      width: calc(50% - 0.5rem);
+    }
+    main form input {
+      width: 100%;      
+      height: 3rem;
+      border: 0;
+      outline: 0;
+      background: transparent;
+    }
+    main form input + span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #b44d5c;
+      left: -100%;
+      bottom: 0;
+      transition: all 0.25s ease;
+    }
+    main form input:focus + span {
+      left: 0;
+    }
+    main form input:nth-child(1),
+    main form input:nth-child(2) {
+      width: calc(50% - 0.5rem);
+    }
+    main form textarea {
+      width: 100%;
+      border: 0;
+      margin-top: 2rem;
+      outline: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          Serviços
+        </li>
+        <li>
+          <a href="aboutme.html">Sobre mim</a>
+        </li>
+        <li>
+          <h1>Dev.</h1>
+        </li>
+        <li>
+          Portfólio
+        </li>
+        <li>
+          Clientes
+        </li>
+        <li>
+          <a href="contact.html" class="active">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Formulário de Contato</h1>
+    <form>
+      <label for="first_name">
+        <input id="first_name" type="text" placeholder="Nome" />
+        <span></span>
+      </label>
+      <label for="first_name">
+        <input id="last_name" type="text" placeholder="Sobrenome" />
+        <span></span>
+      </label>
+      <label>
+        <input id="email" type="text" placeholder="Seu-email" />
+        <span></span>
+      </label>
+      <label>
+        <input id="subject" type="text" placeholder="Título da mensagem" />
+        <span></span>
+      </label>
+      <textarea placeholder="Digite aqui sua mensagem" rows="5"></textarea>
+    </form>
+  </main>
+</body>
+</html>
